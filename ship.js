@@ -27,6 +27,9 @@ const Ship = (name, hitLocation) => {
   const shipName = () => {
     return name;
   };
+  
+  
+
 
   return { shipName, hitLocation, hit, isSunk, shipLength };
 };
