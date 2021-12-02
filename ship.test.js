@@ -43,3 +43,15 @@ test("ship is not sunk", () => {
   Destroyer.hit(1);
   expect(Destroyer.isSunk()).toBe(false);
 });
+
+test("Destroyer length is 3", () => {
+  expect(Destroyer.shipLength()).toBe(3);
+});
+
+test("Destroyer was hit", () => {
+  expect(Destroyer.hit(2)).toBe("Ship was hit");
+});
+
+test("Destroyer is sunk", () => {
+  expect(Destroyer.isSunk()).toBe(true);
+});
